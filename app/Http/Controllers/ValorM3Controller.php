@@ -28,7 +28,7 @@ class ValorM3Controller extends Controller
             $query = trim($request->get('searchText'));
             $valores =  DB::table('valorm3')->where('nombre', 'LIKE', '%' . $query . '%')->orderBy('idValorM3', 'desc')->get();
 
-            return view('Administracion.valorm3.index', ["valores" => $valores, "searchText" => $query]);
+            return view('Administracion.Valorm3.index', ["valores" => $valores, "searchText" => $query]);
         }
     } // para mostrar la pagina inicial 
     public function create()
