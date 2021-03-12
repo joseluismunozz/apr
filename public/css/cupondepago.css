@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.clearfix{
+    padding: 0px;
+    margin: 0px;
+}
+table,td,tr{
+    border: 1px solid black;
+}
+ input:disabled{
+    background:none !important;
+    border: none;
+    height: 24px !important;
+}
