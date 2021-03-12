@@ -23,6 +23,12 @@ use App\Models\Cupondepago;
 | contains the "web" middleware group. Now create something great!
 |
 */
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}   
+Route::get('/', function () {
+    return view('layouts.app');
+});
 
 Auth::routes();
 //validacion para registro de usuario
